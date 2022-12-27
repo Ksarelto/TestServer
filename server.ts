@@ -16,12 +16,12 @@ interface IEmailFormData {
 
 const sendEmail = async (formData: IEmailFormData) => {
   const transporter = nodemailer.createTransport({
-    host: 'smtp.yandex.ru',
+    host: 'smtp.gmail.com',
     port: 587,
     secure: false,
     auth: {
       user: formData.email,
-      pass: formData.password //for gmail 'ablbytncxahkebbu'
+      pass: 'ablbytncxahkebbu' //for gmail 'ablbytncxahkebbu'
     }
   })
 
