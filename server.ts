@@ -21,7 +21,7 @@ const sendEmail = async (formData: IEmailFormData) => {
     secure: false,
     auth: {
       user: formData.email,
-      pass: 'ablbytncxahkebbu' //for gmail 'ablbytncxahkebbu'
+      pass: formData.password //for gmail 'ablbytncxahkebbu'
     }
   })
 
